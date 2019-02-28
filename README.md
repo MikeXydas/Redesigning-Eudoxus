@@ -39,7 +39,7 @@
 
 
 ## TODOs
-* Translate in English the two reports (EudoxosUsabilityReport.pdf, RedesigningEudoxos.pdf
+* Translate in English the two reports (EudoxosUsabilityReport.pdf, RedesigningEudoxos.pdf)
 * Translate in English the whole website
 * Complete the publisher services adding overview and edit of uploaded books
 
