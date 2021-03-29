@@ -25,7 +25,7 @@ function logout() {
 
   request.done(function (response){
     
-    window.location.replace("http://localhost/sdi1500048_sdi1500116/regLogin.php");
+    window.location.replace("http://localhost/regLogin.php");
   });
 
   request.fail(function (jqXHR, textStatus, errorThrown){

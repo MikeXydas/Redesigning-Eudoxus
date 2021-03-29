@@ -35,24 +35,24 @@ window.onload = function(){
 function profileGo(where) {
     if(where == "prof") {
         if(logginedType == 1) {
-            window.location.href = "http://localhost/sdi1500048_sdi1500116/profileFoititi.php";
+            window.location.href = "http://localhost/profileFoititi.php";
         }
         else if(logginedType == 2) {
-            window.location.href = "http://localhost/sdi1500048_sdi1500116/profileEkdoti.php";
+            window.location.href = "http://localhost/profileEkdoti.php";
         }
         else {
-            window.location.href = "http://localhost/sdi1500048_sdi1500116/regLogin.php";
+            window.location.href = "http://localhost/regLogin.php";
         }
     }
     else if(logginedType != 1) {
-        window.location.href = "http://localhost/sdi1500048_sdi1500116/regLogin.php";
+        window.location.href = "http://localhost/regLogin.php";
     }
     else {
         if(where == "curr") {
-            window.location.href = "http://localhost/sdi1500048_sdi1500116/profileFoititi.php?choice=curr";
+            window.location.href = "http://localhost/profileFoititi.php?choice=curr";
         }
         else if(where == "hist") {
-            window.location.href = "http://localhost/sdi1500048_sdi1500116/profileFoititi.php?choice=hist";
+            window.location.href = "http://localhost/profileFoititi.php?choice=hist";
         }
     }
 }
@@ -467,10 +467,10 @@ function docLocation() {
     var msg = url.searchParams.get("msg");
     console.log(msg);
     if(msg == "notGet") {
-        window.location.replace("http://localhost/sdi1500048_sdi1500116/getbooks.php");
+        window.location.replace("http://localhost/getbooks.php");
     }
     else if (msg == "notSubmit") {
-        window.location.replace("http://localhost/sdi1500048_sdi1500116/submitBook.php");
+        window.location.replace("http://localhost/submitBook.php");
     }
     else {
         location.href = 'index.php';

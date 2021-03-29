@@ -58,7 +58,7 @@
 
             if(mysqli_query($conn, $bookQuery)){  //Record added successfully
                 if( isset($_COOKIE['book'])) {
-                    setcookie('book', "Expired", time() - 3600000, "/sdi1500048_sdi1500116");
+                    setcookie('book', "Expired", time() - 3600000, "");
                 }
                 $last_book = $conn->insert_id;
             } else{
@@ -128,7 +128,7 @@
             $book->setIndex($index);
             $book->setCover($cover);
 
-            setcookie('book', serialize($book), time() + 360000, "/sdi1500048_sdi1500116");
+            setcookie('book', serialize($book), time() + 360000, "");
             $val = 0;      //User not connected
             echo $val;
             return $val;

@@ -29,9 +29,9 @@
 
                 $updateQuery = "UPDATE `User` SET `username` = '$username' WHERE `User`.`userId` = '$userId' ";
                     
-                setcookie('user', serialize($user), time() - 360000, "/sdi1500048_sdi1500116");
+                setcookie('user', serialize($user), time() - 360000, "");
                 $user->setUsername($username);
-                setcookie('user', serialize($user), time() + 360000, "/sdi1500048_sdi1500116" );
+                setcookie('user', serialize($user), time() + 360000, "" );
                     
                 if (mysqli_query($conn, $updateQuery)) {
                     CloseCon($conn);
@@ -51,11 +51,11 @@
                     
                 $updateQuery = "UPDATE `User` SET `username` = '$username', `password` = '$password' WHERE `User`.`userId` = '$userId' ";
                 
-                setcookie('user', serialize($user), time() - 360000, "/sdi1500048_sdi1500116");
+                setcookie('user', serialize($user), time() - 360000, "");
                 $user->setUsername($username);
                 $user->setPassword($password);
                 
-                setcookie('user', serialize($user), time() + 360000, "/sdi1500048_sdi1500116");
+                setcookie('user', serialize($user), time() + 360000, "");
                 
                 if (mysqli_query($conn, $updateQuery)) {
                     CloseCon($conn);
