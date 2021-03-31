@@ -160,7 +160,7 @@
         <div class="row breadcrumb">
             <div class="col-md-12">
                 <ul class="breadcrumbT">
-                <li><a href="">Αρχική</a></li>
+                <li><a href="index.php">Αρχική</a></li>
                 <li><a href="#">Βοήθεια</a></li>
                 </ul>
             </div>
