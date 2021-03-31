@@ -8,18 +8,18 @@ SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0;
 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION';
 
 -- -----------------------------------------------------
--- Schema eamDatabase
+-- Schema eamdatabase
 -- -----------------------------------------------------
 
 -- -----------------------------------------------------
--- Schema eamDatabase
+-- Schema eamdatabase
 -- -----------------------------------------------------
-USE `eamDatabase` ;
+USE `eamdatabase` ;
 
 -- -----------------------------------------------------
--- Table `eamDatabase`.`User`
+-- Table `eamdatabase`.`User`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `eamDatabase`.`User` (
+CREATE TABLE IF NOT EXISTS `eamdatabase`.`User` (
   `userId` INT NOT NULL AUTO_INCREMENT,
   `username` VARCHAR(45) NOT NULL,
   `password` VARCHAR(45) NOT NULL,
@@ -33,9 +33,9 @@ ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `eamDatabase`.`Book`
+-- Table `eamdatabase`.`Book`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `eamDatabase`.`Book` (
+CREATE TABLE IF NOT EXISTS `eamdatabase`.`Book` (
   `bookId` INT NOT NULL AUTO_INCREMENT,
   `title` VARCHAR(45) NOT NULL,
   `authors` VARCHAR(45) NOT NULL,
@@ -54,16 +54,16 @@ CREATE TABLE IF NOT EXISTS `eamDatabase`.`Book` (
   INDEX `fk_Book_User1_idx` (`User_userId` ASC) ,
   CONSTRAINT `fk_Book_User1`
     FOREIGN KEY (`User_userId`)
-    REFERENCES `eamDatabase`.`User` (`userId`)
+    REFERENCES `eamdatabase`.`User` (`userId`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `eamDatabase`.`Keyword`
+-- Table `eamdatabase`.`Keyword`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `eamDatabase`.`Keyword` (
+CREATE TABLE IF NOT EXISTS `eamdatabase`.`Keyword` (
   `keywordId` INT NOT NULL AUTO_INCREMENT,
   `word` VARCHAR(45) NOT NULL,
   PRIMARY KEY (`keywordId`))
@@ -71,9 +71,9 @@ ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `eamDatabase`.`Course`
+-- Table `eamdatabase`.`Course`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `eamDatabase`.`Course` (
+CREATE TABLE IF NOT EXISTS `eamdatabase`.`Course` (
   `courseId` INT NOT NULL AUTO_INCREMENT,
   `courseName` VARCHAR(45) NOT NULL,
   `uniName` VARCHAR(45) NOT NULL,
@@ -84,9 +84,9 @@ ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `eamDatabase`.`Statement`
+-- Table `eamdatabase`.`Statement`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `eamDatabase`.`Statement` (
+CREATE TABLE IF NOT EXISTS `eamdatabase`.`Statement` (
   `statementId` INT NOT NULL AUTO_INCREMENT,
   `semesterStatement` INT NOT NULL,
   `current` INT NOT NULL,
@@ -95,16 +95,16 @@ CREATE TABLE IF NOT EXISTS `eamDatabase`.`Statement` (
   INDEX `fk_Statement_User1_idx` (`User_userId` ASC) ,
   CONSTRAINT `fk_Statement_User1`
     FOREIGN KEY (`User_userId`)
-    REFERENCES `eamDatabase`.`User` (`userId`)
+    REFERENCES `eamdatabase`.`User` (`userId`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `eamDatabase`.`Book_has_Keyword`
+-- Table `eamdatabase`.`Book_has_Keyword`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `eamDatabase`.`Book_has_Keyword` (
+CREATE TABLE IF NOT EXISTS `eamdatabase`.`Book_has_Keyword` (
   `Book_bookId` INT NOT NULL,
   `Keyword_keywordId` INT NOT NULL,
   PRIMARY KEY (`Book_bookId`, `Keyword_keywordId`),
@@ -112,21 +112,21 @@ CREATE TABLE IF NOT EXISTS `eamDatabase`.`Book_has_Keyword` (
   INDEX `fk_Book_has_Keyword_Book_idx` (`Book_bookId` ASC) ,
   CONSTRAINT `fk_Book_has_Keyword_Book`
     FOREIGN KEY (`Book_bookId`)
-    REFERENCES `eamDatabase`.`Book` (`bookId`)
+    REFERENCES `eamdatabase`.`Book` (`bookId`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT `fk_Book_has_Keyword_Keyword1`
     FOREIGN KEY (`Keyword_keywordId`)
-    REFERENCES `eamDatabase`.`Keyword` (`keywordId`)
+    REFERENCES `eamdatabase`.`Keyword` (`keywordId`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `eamDatabase`.`Book_has_Course`
+-- Table `eamdatabase`.`Book_has_Course`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `eamDatabase`.`Book_has_Course` (
+CREATE TABLE IF NOT EXISTS `eamdatabase`.`Book_has_Course` (
   `Book_bookId` INT NOT NULL,
   `Course_courseId` INT NOT NULL,
   PRIMARY KEY (`Book_bookId`, `Course_courseId`),
@@ -134,21 +134,21 @@ CREATE TABLE IF NOT EXISTS `eamDatabase`.`Book_has_Course` (
   INDEX `fk_Book_has_Course_Book1_idx` (`Book_bookId` ASC) ,
   CONSTRAINT `fk_Book_has_Course_Book1`
     FOREIGN KEY (`Book_bookId`)
-    REFERENCES `eamDatabase`.`Book` (`bookId`)
+    REFERENCES `eamdatabase`.`Book` (`bookId`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT `fk_Book_has_Course_Course1`
     FOREIGN KEY (`Course_courseId`)
-    REFERENCES `eamDatabase`.`Course` (`courseId`)
+    REFERENCES `eamdatabase`.`Course` (`courseId`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `eamDatabase`.`StatedBooks`
+-- Table `eamdatabase`.`StatedBooks`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `eamDatabase`.`StatedBooks` (
+CREATE TABLE IF NOT EXISTS `eamdatabase`.`StatedBooks` (
   `statedBooksId` INT NOT NULL AUTO_INCREMENT,
   `bookId` INT NOT NULL,
   `courseId` INT NOT NULL,
@@ -158,7 +158,7 @@ CREATE TABLE IF NOT EXISTS `eamDatabase`.`StatedBooks` (
   INDEX `fk_statedBooks_Statement1_idx` (`Statement_statementId` ASC, `Statement_User_userId` ASC) ,
   CONSTRAINT `fk_statedBooks_Statement1`
     FOREIGN KEY (`Statement_statementId` , `Statement_User_userId`)
-    REFERENCES `eamDatabase`.`Statement` (`statementId` , `User_userId`)
+    REFERENCES `eamdatabase`.`Statement` (`statementId` , `User_userId`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
