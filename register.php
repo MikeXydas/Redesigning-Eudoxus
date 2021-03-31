@@ -56,7 +56,7 @@
             $user->setCategoryId(htmlspecialchars($categoryId));
             $user->setUniName(htmlspecialchars(null));
             $user->setUniDepartment(htmlspecialchars(null));
-            setcookie('user', serialize($user), time() + 360000, "" );
+            setcookie('user', serialize($user), time() + 360000, "/" );
 
             $val = 1;
             echo $val;

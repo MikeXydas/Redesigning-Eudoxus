@@ -30,7 +30,7 @@
       <div class="col-md-12">
         <div class="row topTopPart">
           <div class="col-xl-1 col-lg-2">
-            <a class="logoDiv" href="http://localhost/"><img class="logo" src="images/logo.png" alt="Logo"><p class="logoText">Εύδοξος</p></a>
+            <a class="logoDiv" href=""><img class="logo" src="images/logo.png" alt="Logo"><p class="logoText">Εύδοξος</p></a>
           </div>
           <div class="col-xl-8 d-lg-none d-xl-block">
             <div class="row">

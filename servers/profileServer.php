@@ -77,12 +77,12 @@
 
                 }
                 
-                setcookie('user', serialize($user), time() - 360000, "");
+                setcookie('user', serialize($user), time() - 360000, "/");
                 $user->setUsername($username);
                 $user->setUniName($uniName);
                 $user->setUniDepartment($uniDepart);
             
-                setcookie('user', serialize($user), time() + 360000, "");
+                setcookie('user', serialize($user), time() + 360000, "/");
                     
                 
                 if (mysqli_query($conn, $updateQuery)) {
@@ -115,12 +115,12 @@
             
                 }
 
-                setcookie('user', serialize($user), time() - 360000, "");
+                setcookie('user', serialize($user), time() - 360000, "/");
                 $user->setUsername($username);
                 $user->setUniName($uniName);
                 $user->setUniDepartment($uniDepart);
                 $user->setPassword($password);
-                setcookie('user', serialize($user), time() + 360000, "");
+                setcookie('user', serialize($user), time() + 360000, "/");
 
 
                 if (mysqli_query($conn, $updateQuery)) {

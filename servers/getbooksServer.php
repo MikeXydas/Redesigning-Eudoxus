@@ -164,14 +164,14 @@
         $newState->courseId = $selCourse;
         $conn = OpenCon();
         if(!isset($_COOKIE['statement'])) {
-            setcookie('statement', json_encode(array($newState)), time()+360000, "");
+            setcookie('statement', json_encode(array($newState)), time()+360000, "/");
             getcookie('statement');
             $statements = array($newState);
         }
         else {
             $statements = json_decode($_COOKIE['statement'], false);
             $statements[] = $newState;
-            setcookie('statement', json_encode($statements), time()+360000, "");
+            setcookie('statement', json_encode($statements), time()+360000, "/");
             getcookie('statement');
         }
         //Case: User is not logged in
@@ -251,7 +251,7 @@
                 break;
             }
         }
-        setcookie('statement', json_encode($statements), time()+360000, "");
+        setcookie('statement', json_encode($statements), time()+360000, "/");
 
         if(empty($statements)) {
             echo '<p style=" font-size: 24px; text-align: center; margin-right: 10%; margin-top:10%;">Η δήλωση είναι κενή</p>';
@@ -316,7 +316,7 @@
 
     function RefereshCookie() {
         $conn = OpenCon();
-        setcookie('refreshCookie', "1");
+        setcookie('refreshCookie', "1", 360000, "/");
         return 0;
     }
 

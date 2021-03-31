@@ -192,11 +192,15 @@
                                 <?php
                                     
                                     if (isset($_COOKIE['user'])) {
-
+                                        
                                         $user = new User(0);
                                         $user  = unserialize($_COOKIE['user']);
                                         echo '<input type="text" oninput="typeUsername(this.value)" class="form-control" id="username" value="'. htmlspecialchars($user->getUsername()) . '" autocomplete="off">';
                                     }
+                                    else {
+                                        echo 'aaa';
+                                    }
+                                    
                                 ?>
                             </div>
                             <div>
