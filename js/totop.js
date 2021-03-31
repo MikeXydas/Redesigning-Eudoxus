@@ -25,7 +25,7 @@ function logout() {
 
   request.done(function (response){
     
-    window.location.replace("http://localhost/regLogin.php");
+    window.location.replace("regLogin.php");
   });
 
   request.fail(function (jqXHR, textStatus, errorThrown){

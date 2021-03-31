@@ -31,7 +31,7 @@
       <div class="col-md-12">
         <div class="row topTopPart">
           <div class="col-xl-1 col-lg-2">
-            <a class="logoDiv" href="http://localhost/"><img class="logo" src="images/logo.png" alt="Logo"><p class="logoText">Εύδοξος</p></a>
+            <a class="logoDiv" href=""><img class="logo" src="images/logo.png" alt="Logo"><p class="logoText">Εύδοξος</p></a>
           </div>
           <div class="col-xl-8 d-lg-none d-xl-block">
             <div class="row">
@@ -94,59 +94,59 @@
               <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
                 <ul class="navbar-nav mr-auto mt-2 mt-xl-0">
                   <li class="nav-item">
-                    <a class="nav-link" href="http://localhost/">Αρχική</a>
+                    <a class="nav-link" href="">Αρχική</a>
                   </li>
                   <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                       Φοιτητής
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <a class="dropdown-item" href="http://localhost/getbooks.php">Δήλωση Συγγραμμάτων</a>
+                      <a class="dropdown-item" href="getbooks.php">Δήλωση Συγγραμμάτων</a>
                       <div class="dropdown-divider"></div>
-                      <a class="dropdown-item" href="http://localhost/searchbooks.php">Αναζήτηση Συγγραμμάτων</a>
+                      <a class="dropdown-item" href="searchbooks.php">Αναζήτηση Συγγραμμάτων</a>
                       <div class="dropdown-divider"></div>
                       <a class="dropdown-item" href="#" onclick="profileGo('curr')">Τρέχουσα Δήλωση</a>
                       <div class="dropdown-divider"></div>
-                      <a class="dropdown-item" href="http://localhost/help.php?who=stud">Βοήθεια</a>
+                      <a class="dropdown-item" href="help.php?who=stud">Βοήθεια</a>
                   </li>
                   <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                       Εκδότης
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <a class="dropdown-item" href="http://localhost/submitBook.php">Καταχώρηση Συγγράμματος</a>
+                      <a class="dropdown-item" href="submitBook.php">Καταχώρηση Συγγράμματος</a>
                       <div class="dropdown-divider"></div>
-                      <a class="dropdown-item" href="http://localhost/underConstruction.php">Διαχείρηση Συγγραμμάτων</a>
+                      <a class="dropdown-item" href="underConstruction.php">Διαχείρηση Συγγραμμάτων</a>
                       <div class="dropdown-divider"></div>
-                      <a class="dropdown-item" href="http://localhost/help.php?who=pub">Βοήθεια</a>
+                      <a class="dropdown-item" href="help.php?who=pub">Βοήθεια</a>
                   </li>
                   <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                       Γραμματεία
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <a class="dropdown-item" href="http://localhost/underConstruction.php">Εισαγωγή Π.Σ.</a>
+                      <a class="dropdown-item" href="underConstruction.php">Εισαγωγή Π.Σ.</a>
                       <div class="dropdown-divider"></div>
-                      <a class="dropdown-item" href="http://localhost/underConstruction.php">Επεξεργασία Π.Σ.</a>
+                      <a class="dropdown-item" href="underConstruction.php">Επεξεργασία Π.Σ.</a>
                       <div class="dropdown-divider"></div>
-                      <a class="dropdown-item" href="http://localhost/underConstruction.php">Βοήθεια</a>
+                      <a class="dropdown-item" href="underConstruction.php">Βοήθεια</a>
                   </li>
                   <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                       Σημεια Διανομής
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <a class="dropdown-item" href="http://localhost/underConstruction.php">Επικύρωση Παραλαβής</a>
+                      <a class="dropdown-item" href="underConstruction.php">Επικύρωση Παραλαβής</a>
                       <div class="dropdown-divider"></div>
-                      <a class="dropdown-item" href="http://localhost/underConstruction.php">Επεξεργασία Πληροφοριών</a>
+                      <a class="dropdown-item" href="underConstruction.php">Επεξεργασία Πληροφοριών</a>
                       <div class="dropdown-divider"></div>
-                      <a class="dropdown-item" href="http://localhost/underConstruction.php">Βοήθεια</a>
+                      <a class="dropdown-item" href="underConstruction.php">Βοήθεια</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link active" href="http://localhost/searchbooks.php">Αναζήτηση Συγγραμμάτων</a>
+                    <a class="nav-link active" href="searchbooks.php">Αναζήτηση Συγγραμμάτων</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="http://localhost/underConstruction.php">Επικοινωνία</a>
+                    <a class="nav-link" href="underConstruction.php">Επικοινωνία</a>
                   </li>
                 </ul>
                 <form action="#" method="post" class="form-inline my-2 my-lg-0">
@@ -162,7 +162,7 @@
     <div class="row breadcrumb">
       <div class="col-md-12">
         <ul class="breadcrumbT">
-          <li><a href="http://localhost/">Αρχική</a></li>
+          <li><a href="">Αρχική</a></li>
           <li><a href="#">Αναζήτηση Συγγραμμάτων</a></li>
         </ul>
       </div>

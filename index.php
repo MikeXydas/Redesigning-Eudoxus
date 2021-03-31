@@ -92,59 +92,59 @@
               <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
                 <ul class="navbar-nav mr-auto mt-2 mt-xl-0">
                   <li class="nav-item">
-                    <a class="nav-link active" href="http://localhost/">Αρχική</a>
+                    <a class="nav-link active" href="">Αρχική</a>
                   </li>
                   <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                       Φοιτητής
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <a class="dropdown-item" href="http://localhost/getbooks.php">Δήλωση Συγγραμμάτων</a>
+                      <a class="dropdown-item" href="getbooks.php">Δήλωση Συγγραμμάτων</a>
                       <div class="dropdown-divider"></div>
-                      <a class="dropdown-item" href="http://localhost/searchbooks.php">Αναζήτηση Συγγραμμάτων</a>
+                      <a class="dropdown-item" href="searchbooks.php">Αναζήτηση Συγγραμμάτων</a>
                       <div class="dropdown-divider"></div>
                       <a class="dropdown-item" href="#" onclick="profileGo('curr')">Τρέχουσα Δήλωση</a>
                       <div class="dropdown-divider"></div>
-                      <a class="dropdown-item" href="http://localhost/help.php?who=stud">Βοήθεια</a>
+                      <a class="dropdown-item" href="help.php?who=stud">Βοήθεια</a>
                   </li>
                   <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                       Εκδότης
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <a class="dropdown-item" href="http://localhost/submitBook.php">Καταχώρηση Συγγράμματος</a>
+                      <a class="dropdown-item" href="submitBook.php">Καταχώρηση Συγγράμματος</a>
                       <div class="dropdown-divider"></div>
-                      <a class="dropdown-item" href="http://localhost/underConstruction.php">Διαχείρηση Συγγραμμάτων</a>
+                      <a class="dropdown-item" href="underConstruction.php">Διαχείρηση Συγγραμμάτων</a>
                       <div class="dropdown-divider"></div>
-                      <a class="dropdown-item" href="http://localhost/help.php?who=pub">Βοήθεια</a>
+                      <a class="dropdown-item" href="help.php?who=pub">Βοήθεια</a>
                   </li>
                   <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                       Γραμματεία
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <a class="dropdown-item" href="http://localhost/underConstruction.php">Εισαγωγή Π.Σ.</a>
+                      <a class="dropdown-item" href="underConstruction.php">Εισαγωγή Π.Σ.</a>
                       <div class="dropdown-divider"></div>
-                      <a class="dropdown-item" href="http://localhost/underConstruction.php">Επεξεργασία Π.Σ.</a>
+                      <a class="dropdown-item" href="underConstruction.php">Επεξεργασία Π.Σ.</a>
                       <div class="dropdown-divider"></div>
-                      <a class="dropdown-item" href="http://localhost/underConstruction.php">Βοήθεια</a>
+                      <a class="dropdown-item" href="underConstruction.php">Βοήθεια</a>
                   </li>
                   <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                       Σημεια Διανομής
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <a class="dropdown-item" href="http://localhost/underConstruction.php">Επικύρωση Παραλαβής</a>
+                      <a class="dropdown-item" href="underConstruction.php">Επικύρωση Παραλαβής</a>
                       <div class="dropdown-divider"></div>
-                      <a class="dropdown-item" href="http://localhost/underConstruction.php">Επεξεργασία Πληροφοριών</a>
+                      <a class="dropdown-item" href="underConstruction.php">Επεξεργασία Πληροφοριών</a>
                       <div class="dropdown-divider"></div>
-                      <a class="dropdown-item" href="http://localhost/underConstruction.php">Βοήθεια</a>
+                      <a class="dropdown-item" href="underConstruction.php">Βοήθεια</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link " href="http://localhost/searchbooks.php">Αναζήτηση Συγγραμμάτων</a>
+                    <a class="nav-link " href="searchbooks.php">Αναζήτηση Συγγραμμάτων</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="http://localhost/underConstruction.php">Επικοινωνία</a>
+                    <a class="nav-link" href="underConstruction.php">Επικοινωνία</a>
                   </li>
                 </ul>
                 <form action="#" method="post" class="form-inline my-2 my-lg-0">
@@ -178,34 +178,34 @@
           <div id="foititisInfo" class="col-lg-10 col-md-8">
             <p class=" pull-right infoTitle">Ο φοιτητής μπορεί να:</p>
             <ul style="padding-left: 15%;">
-              <li class="infoAbility">πραγματοποιήσει <a href="http://localhost/getbooks.php">δήλωση συγγραμμάτων</a></li>
+              <li class="infoAbility">πραγματοποιήσει <a href="getbooks.php">δήλωση συγγραμμάτων</a></li>
               <li class="infoAbility">μεταβεί στην <a href="#" onclick="profileGo('curr')"> τρέχουσα δήλωση</a></li>
-              <li class="infoAbility"><a href="http://localhost/searchbooks.php">αναζητήσει</a> συγγράμματα</li>
+              <li class="infoAbility"><a href="searchbooks.php">αναζητήσει</a> συγγράμματα</li>
             </ul>
             <p class="infοDeadline">Προθεσμία Δηλώσεων Συγγραμμάτων: 17/11/2018</p>
           </div>
           <div id="ekdotisInfo" class="col-lg-10 col-md-8" style="display: none;">
             <p class=" pull-right infoTitle">Ο εκδότης μπορεί να:</p>
             <ul style="padding-left: 15%;">
-              <li class="infoAbility"><a href="http://localhost/submitBook.php">καταχωρήσει</a> ένα συγγραμμα</li>
-              <li class="infoAbility">επεξεργαστεί τα τρέχοντα <a href="http://localhost/underConstruction.php">καταχωρημένα συγγράμματα</a></li>
-              <li class="infoAbility"><a href="http://localhost/searchbooks.php">αναζητήσει</a> συγγράμματα</li>
+              <li class="infoAbility"><a href="submitBook.php">καταχωρήσει</a> ένα συγγραμμα</li>
+              <li class="infoAbility">επεξεργαστεί τα τρέχοντα <a href="underConstruction.php">καταχωρημένα συγγράμματα</a></li>
+              <li class="infoAbility"><a href="searchbooks.php">αναζητήσει</a> συγγράμματα</li>
             </ul>
           </div>
           <div id="grammateiaInfo" class="col-lg-10 col-md-8" style="display: none;">
             <p class=" pull-right infoTitle">Η γραμματεία μπορεί να:</p>
             <ul style="padding-left: 15%;">
-              <li class="infoAbility">Lorem ipsum dolor sit amet <a href="http://localhost/underConstruction.php">Lorem ipsum </a></li>
-              <li class="infoAbility">Lorem <a href="http://localhost/underConstruction.php">Lorem ipsumt amet</a></li>
-              <li class="infoAbility"><a href="http://localhost/underConstruction.php">Lorem ipsum </a> Lorem ipsum</li>
+              <li class="infoAbility">Lorem ipsum dolor sit amet <a href="underConstruction.php">Lorem ipsum </a></li>
+              <li class="infoAbility">Lorem <a href="underConstruction.php">Lorem ipsumt amet</a></li>
+              <li class="infoAbility"><a href="underConstruction.php">Lorem ipsum </a> Lorem ipsum</li>
             </ul>
           </div>
           <div id="shmeioInfo" class="col-lg-10 col-md-8" style="display: none;">
             <p class=" pull-right infoTitle">Το σημείο διανομής μπορεί να:</p>
             <ul style="padding-left: 15%;">
-              <li class="infoAbility">Lorem ipsum dolor sit amet <a href="http://localhost/underConstruction.php">Lorem ipsum </a></li>
-              <li class="infoAbility">Lorem <a href="http://localhost/underConstruction.php">Lorem ipsumt amet</a></li>
-              <li class="infoAbility"><a href="http://localhost/underConstruction.php">Lorem ipsum </a> Lorem ipsum</li>
+              <li class="infoAbility">Lorem ipsum dolor sit amet <a href="underConstruction.php">Lorem ipsum </a></li>
+              <li class="infoAbility">Lorem <a href="underConstruction.php">Lorem ipsumt amet</a></li>
+              <li class="infoAbility"><a href="underConstruction.php">Lorem ipsum </a> Lorem ipsum</li>
             </ul>
           </div>
         </div>

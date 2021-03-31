@@ -1,5 +1,5 @@
 function profileGo(where) {
-    window.location.href = "http://localhost/profileFoititi.php";
+    window.location.href = "profileFoititi.php";
 }
 
 function setActive(id, deactivate1, deactivate2) {
@@ -41,7 +41,7 @@ function activate(id, deactivate1, deactivate2) {
 }
 
 function getbooks() {
-    window.location.replace("http://localhost/getbooks.php");
+    window.location.replace("getbooks.php");
 }
 
 window.onload = function() {

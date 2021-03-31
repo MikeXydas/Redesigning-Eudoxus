@@ -1,5 +1,5 @@
 function profileGo(where) {
-    window.location.href = "http://localhost/profileEkdoti.php";
+    window.location.href = "profileEkdoti.php";
 }
 
 function setActive(id) {
@@ -20,7 +20,7 @@ function activate(id) {
 }
 
 function getbooks() {
-    window.location.replace("http://localhost/getbooks.php");
+    window.location.replace("getbooks.php");
 }
 
 window.onload = function() {

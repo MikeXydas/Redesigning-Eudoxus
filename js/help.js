@@ -51,24 +51,24 @@ $(document).ready(function() {
 function profileGo(where) {
     if(where == "prof") {
         if(logginedType == 1) {
-            window.location.href = "http://localhost/profileFoititi.php";
+            window.location.href = "profileFoititi.php";
         }
         else if(logginedType == 2) {
-            window.location.href = "http://localhost/profileEkdoti.php";
+            window.location.href = "profileEkdoti.php";
         }
         else {
-            window.location.href = "http://localhost/regLogin.php";
+            window.location.href = "regLogin.php";
         }
     }
     else if(logginedType != 1) {
-        window.location.href = "http://localhost/regLogin.php";
+        window.location.href = "regLogin.php";
     }
     else {
         if(where == "curr") {
-            window.location.href = "http://localhost/profileFoititi.php?choice=curr";
+            window.location.href = "profileFoititi.php?choice=curr";
         }
         else if(where == "hist") {
-            window.location.href = "http://localhost/profileFoititi.php?choice=hist";
+            window.location.href = "profileFoititi.php?choice=hist";
         }
     }
 }
