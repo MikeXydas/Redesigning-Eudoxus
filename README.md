@@ -1,5 +1,5 @@
    # Redesigning the website Eudoxos  
-   **Collaborator**: Stavroula Iatropoulou https://gitlab.com/stavIatrop
+   **Collaborator**: Stavroula Iatropoulou https://github.com/stavIatrop
    
   ## Small demo (in Greek)
   Live http version of the webapp: http://ec2-18-191-155-232.us-east-2.compute.amazonaws.com/index.php (**Firefox** is the suggested browser due to padding issues with Chrome)
