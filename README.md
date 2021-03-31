@@ -1,5 +1,24 @@
    # Redesigning the website Eudoxos  
    **Collaborator**: Stavroula Iatropoulou https://gitlab.com/stavIatrop
+   
+  ## Small demo (in Greek)
+  Live http version of the webapp: http://ec2-18-191-155-232.us-east-2.compute.amazonaws.com/index.php (**Firefox** is the suggested browser due to padding issues with Chrome)
+  
+  **Disclaimer: This is not an official webapp and it was made as a small project. There are many issues, mainly concerning security and browser compatibility.**
+  
+  You can register as a publisher or a student or you can use the following default accounts:
+  * Student
+      * Email: stud@mail.com
+      * Password: 123
+  * Publisher
+      * Email: pub@mail.com
+      * Password: 123  
+  
+  As a student you can create and review a statement of the books you require for your courses.  
+  As a publisher you can add books that the students need.  
+  
+  Feel free to read the following README to get a better understanding of the app.
+  
   ## What is Eudoxos  
   Eudoxos is a greek state website used for managing university books.   
   **The (current) website**: https://eudoxus.gr/ (only Greek version)  
