@@ -50,17 +50,17 @@ CREATE TABLE `Book` (
 --
 
 INSERT INTO `Book` (`bookId`, `title`, `authors`, `ISBN`, `publisher`, `publishYear`, `weight`, `pages`, `dimensions`, `price`, `cover`, `pdfPreview`, `pdfIndex`, `User_userId`) VALUES
-(29, 'General Chemistry1', 'Name Author1', '111-111-111-111-1', 'General Publish1', 2003, 5.25, 249, '0', 0, '0', '0', '0', 9),
-(30, 'General Chemistry2', 'Name Author2', '111-111-111-111-2', 'General Publish2', 2005, 5.25, 324, '0', 0, '0', '0', '0', 9),
-(31, 'General Chemistry 3', 'Name Author3', '111-111-111-111-3', 'General Publish3', 2017, 5.25, 434, '12x23', 0, '0', '0', '0', 9),
-(32, 'Organic Chemistry1', 'Name Author1', '222-222-222-222-1', 'Organic Publisher1', 2008, 5.25, 246, '12x23', 0, '0', '0', '0', 9),
-(36, 'Organic Chemistry2', 'Name Author4', '222-222-222-222-2', 'Organic Publisher2', 2018, 0, 459, '0', 0, '0', '0', '0', 9),
-(37, 'Inorganic Chemistry1', 'Name Author2', '333-333-333-333-1', 'Inorganic Publisher1', 2017, 0, 347, '0', 12.95, '0', '0', '0', 9),
-(38, 'Inorganic Chemistry2', 'Name Author5', '333-333-333-333-2', 'Inorganic Publisher2', 2005, 0, 436, '0', 12.95, '0', '0', '0', 9),
-(39, 'Analytical Chemistry1', 'Name Author1', '444-444-444-444-1', 'Analytical Publisher1', 2013, 0, 239, '0', 12.95, '0', '0', '0', 9),
-(40, 'Classical Mechanics 1', 'Name Author1', '444-444-444-444-1', 'Classical1', 2013, 0, 345, '0', 12.95, '0', '0', '0', 9),
-(41, 'Classical Mechanics 2', 'Name Author6', '444-444-444-444-1', 'Classics2', 2004, 0, 435, '0', 0, '0', '0', '0', 9),
-(42, 'Thermodynamics1', 'Name Author7', '555-555-555-555-1', 'Thermo1', 2013, 0, 200, '0', 0, '0', '0', '0', 9);
+(29, 'General Chemistry1', 'Name Author1', '111-111-111-111-1', 'General Publish1', 2003, 5.25, 249, '0', 0, '0', '0', '0', 2),
+(30, 'General Chemistry2', 'Name Author2', '111-111-111-111-2', 'General Publish2', 2005, 5.25, 324, '0', 0, '0', '0', '0', 2),
+(31, 'General Chemistry 3', 'Name Author3', '111-111-111-111-3', 'General Publish3', 2017, 5.25, 434, '12x23', 0, '0', '0', '0', 2),
+(32, 'Organic Chemistry1', 'Name Author1', '222-222-222-222-1', 'Organic Publisher1', 2008, 5.25, 246, '12x23', 0, '0', '0', '0', 2),
+(36, 'Organic Chemistry2', 'Name Author4', '222-222-222-222-2', 'Organic Publisher2', 2018, 0, 459, '0', 0, '0', '0', '0', 2),
+(37, 'Inorganic Chemistry1', 'Name Author2', '333-333-333-333-1', 'Inorganic Publisher1', 2017, 0, 347, '0', 12.95, '0', '0', '0', 2),
+(38, 'Inorganic Chemistry2', 'Name Author5', '333-333-333-333-2', 'Inorganic Publisher2', 2005, 0, 436, '0', 12.95, '0', '0', '0', 2),
+(39, 'Analytical Chemistry1', 'Name Author1', '444-444-444-444-1', 'Analytical Publisher1', 2013, 0, 239, '0', 12.95, '0', '0', '0', 2),
+(40, 'Classical Mechanics 1', 'Name Author1', '444-444-444-444-1', 'Classical1', 2013, 0, 345, '0', 12.95, '0', '0', '0', 2),
+(41, 'Classical Mechanics 2', 'Name Author6', '444-444-444-444-1', 'Classics2', 2004, 0, 435, '0', 0, '0', '0', '0', 2),
+(42, 'Thermodynamics1', 'Name Author7', '555-555-555-555-1', 'Thermo1', 2013, 0, 200, '0', 0, '0', '0', '0', 2);
 
 -- --------------------------------------------------------
 
